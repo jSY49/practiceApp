@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">practiceApp</string>
+    <string name="introduce">Hello. It\'s clear today.</string>
+</resources>

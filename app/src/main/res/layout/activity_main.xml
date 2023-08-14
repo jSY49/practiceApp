@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:padding="10dp"
+        android:columnCount="4"
+        android:rowCount="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/language_button"
+            android:text="languages"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/webView_button"
+            android:text="webView"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
