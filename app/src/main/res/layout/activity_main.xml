@@ -27,6 +27,12 @@
             android:padding="10dp"
             android:layout_margin="5dp"
             />
+        <Button
+            android:id="@+id/dataBinding_button"
+            android:text="dataBinding"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
     </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
