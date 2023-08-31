@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.languageButton.setOnClickListener { buttonClick("Languages") }
         binding.webViewButton.setOnClickListener { buttonClick(("web-view")) }
         binding.dataBindingButton.setOnClickListener { buttonClick(("dataBinding")) }
+        binding.viewModelDataButton.setOnClickListener { buttonClick(("viewModel")) }
     }
 
     private fun buttonClick(s: String) {
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             }
             "dataBinding"->{
                 intent = Intent(this, DataBindingActivity::class.java)
+            }
+            "viewModel"->{
+                intent = Intent(this, viewModelActivity::class.java)
             }
           else -> {}
         }

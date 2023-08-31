@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name" translatable="false">practiceApp</string>
     <string name="introduce">Hello. It\'s clear today.</string>
+
+    <!--뷰모델 게임-->
+    <string name="instructions" translatable="false">Unscramble the word using all the letters.</string>
+    <string name="skip" translatable="false">Skip</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="score" translatable="false">Score: %d</string>
+    <string name="word_count" translatable="false">%d of %d words</string>
+    <string name="enter_your_word" translatable="false">Enter your word</string>
+    <string name="congratulations" translatable="false">Congratulations!</string>
+    <string name="you_scored" translatable="false">"You scored: %d"</string>
+    <string name="exit" translatable="false">Exit</string>
+    <string name="play_again" translatable="false">Play Again</string>
+    <string name="try_again" translatable="false">Try again!</string>
+
 </resources>

@@ -8,7 +8,7 @@
 
     <GridLayout
         android:padding="10dp"
-        android:columnCount="4"
+        android:columnCount="3"
         android:rowCount="10"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -25,11 +25,18 @@
             android:id="@+id/webView_button"
             android:text="webView"
             android:padding="10dp"
+            android:layout_gravity="center_horizontal"
             android:layout_margin="5dp"
             />
         <Button
             android:id="@+id/dataBinding_button"
             android:text="dataBinding"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/viewModel_data_button"
+            android:text="viewModel"
             android:padding="10dp"
             android:layout_margin="5dp"
             />
