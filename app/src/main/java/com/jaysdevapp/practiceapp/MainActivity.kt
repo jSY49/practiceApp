@@ -3,35 +3,41 @@ package com.jaysdevapp.practiceapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import com.jaysdevapp.practiceapp.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    val binding by lazy { ActivityMainBinding.inflate(layoutInflater)}
+    val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.languageButton.setOnClickListener { buttonClick("Languages") }
-        binding.webViewButton.setOnClickListener { buttonClick(("web-view")) }
-        binding.dataBindingButton.setOnClickListener { buttonClick(("dataBinding")) }
+        binding.languageButton.setOnClickListener(this)
+        binding.webViewButton.setOnClickListener(this)
+        binding.dataBindingButton.setOnClickListener(this)
+        binding.pipButton.setOnClickListener(this)
     }
 
-    private fun buttonClick(s: String) {
-        lateinit var intent :Intent
-        when(s){
-            "Languages" -> {
-              intent = Intent(this, LanguagesActivity::class.java)
-              intent.putExtra("transResult",true)
+    override fun onClick(p0: View?) {
+        lateinit var intent: Intent
+        when (p0?.id) {
+            R.id.language_button -> {
+                intent = Intent(this, LanguagesActivity::class.java)
+                intent.putExtra("transResult", true)
             }
-            "web-view"->{
+            R.id.webView_button -> {
                 intent = Intent(this, WebviewActivity::class.java)
             }
-            "dataBinding"->{
+            R.id.dataBinding_button ->{
                 intent = Intent(this, DataBindingActivity::class.java)
             }
-          else -> {}
+            R.id.pip_button ->{
+                intent = Intent(this, PipActivity::class.java)
+            }
+            else -> {}
         }
         startActivity(intent)
     }
